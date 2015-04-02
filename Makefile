@@ -1,10 +1,10 @@
 CFLAGS=-Wall -g
-SOURCES=ex1.c ex3.c
-OBJECTS=$(SOURCES:.c=.o)
+SOURCES=ex1.c ex3.c ex4.c
+OBJECTS=$(SOURCES:.c=)
 
 
 all:
 	make $(OBJECTS)
 clean:
-	rm -f *.o
+	rm -f $(OBJECTS)
 
