@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int main(int argc, char *arg[])
+int main(int argc, char *argv[])
 {
 	//go through each string in argv
 	
-	int i = 0;
+	int i = 1;
 	while(i < argc) {
 		printf("arg %d: %s\n", i, argv[i]);
 		i++;
@@ -19,6 +19,13 @@ int main(int argc, char *arg[])
 		printf("state %d: %s\n", i, states[i]);
 		i++;
 	}
-
+	
+	
+	i = argc;
+	while(i > 0) {
+		printf("arg %d: %s\n", argc-i, argv[argc-i]);
+		i--;
+	}
+	
 	return 0;
 }
