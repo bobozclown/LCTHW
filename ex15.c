@@ -39,6 +39,12 @@ int main(int argc, char *argv[])
 	for(cur_name = names, cur_age = ages; (cur_age - ages)<count; cur_name++, cur_age++) {
 		printf("%s lived %d years so far.\n", *cur_name, *cur_age);
 	}
-
+	
+	printf("---\n");
+	
+	//testing results
+	for(i=0; i <count; i++) {
+		printf("%s \n", *(names+i));
+	}
 	return 0;
 }

@@ -1,2 +1,4 @@
+finish ex16.c 5/25
 add a comment line shortcut to vim
 add colors to less command
+edit makefile to auto make all ex* so dont have to add each new example.c
